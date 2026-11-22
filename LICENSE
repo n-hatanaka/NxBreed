@@ -1,0 +1,167 @@
+Nexus Transformation License 1.0 (Non-Commercial & Commercial Dual License)
+Copyright (c) 2026 Akino (n-hatanaka)
+
+This software (“Nexus UI–DB Transformation Architecture”, hereafter “Nx Architecture”) is
+licensed for free use, reproduction, modification, and redistribution solely for individual
+developers and non-commercial purposes.
+
+----------------------------------------------------------------------
+1. Non-Commercial Use (Individuals / Organizations)
+----------------------------------------------------------------------
+Nx Architecture may be used free of charge under the following conditions:
+
+- Non-commercial use by individual developers (personal use, learning, free/open-source releases, etc.)
+- Use for non-commercial purposes
+- Use for academic research or educational purposes
+- Use in non-commercial OSS projects
+
+※ Even individual developers are considered “commercial users” when providing paid
+   services or products, or when applying this architecture in commissioned work,
+   contract development, or paid engagements for corporations or organizations.
+
+----------------------------------------------------------------------
+2. Evaluation and Proof-of-Concept (PoC)
+----------------------------------------------------------------------
+Evaluation or PoC use of Nx Architecture by corporations or organizations is permitted
+as non-commercial under the following conditions:
+
+- Evaluation period is limited to 30 days
+- Use in production environments is prohibited
+- Use as part of any commercial activity is prohibited
+- Continued use beyond the evaluation period requires a commercial license
+
+※ Individual developers may evaluate without time restrictions.
+
+----------------------------------------------------------------------
+3. Commercial Use (Corporations / Sole Proprietors / Individuals)
+----------------------------------------------------------------------
+The following activities constitute commercial use and require either a separate
+commercial license or enrollment in the designated GitHub Sponsors program:
+
+- Use in production environments
+- Integration into SaaS / ASP / cloud services
+- Use of Nx Architecture in paid services or products
+- Building commercial systems using the Divergence Oscillation Model
+- Commercial implementations using Nx Architecture
+- PoC or evaluation exceeding 30 days
+- Commercial implementations using Nx Architecture specifications or abstract models
+- Use by corporations, for-profit entities, or individuals for business activities,
+  revenue-generating purposes, or business operations (including internal tools and
+  internal workflow systems)
+
+[Author Obligations]
+The Author provides the following assurances to the Licensee:
+
+- The Author will not unilaterally terminate any commercial use agreement.
+- During the contract period, the Author guarantees the Licensee’s commercial usage rights.
+- During the contract period, the Author will not introduce changes that materially hinder the Licensee’s business operations.
+- The Author will act in good faith in all contractual relations with the Licensee.
+
+These obligations apply only during the term of a commercial use agreement or an active GitHub Sponsors subscription.
+
+[Commercial Usage Rights (Sponsors / Individual Contracts)]
+- Commercial usage rights are granted only during active sponsorship or during the
+  effective period of an individual commercial license agreement.
+- Upon cancellation of sponsorship or expiration of the contract, all commercial usage
+  rights immediately terminate.
+- Derivative works created during the sponsorship or contract period may not continue
+  to be used commercially after termination.
+- Continued commercial use requires renewed sponsorship or a new commercial license.
+
+[GitHub Sponsors (For Commercial Use)]
+Tier A (Gold Sponsor) — ¥50,000 / month
+- Full exemption from commercial licensing
+- Large logo displayed at the top of the README
+- Priority technical support via email
+- Listed as an official Nx partner
+
+Tier B (Silver Sponsor) — ¥20,000 / month
+- Commercial licensing exemption
+- Medium logo displayed in the README
+- Standard technical support via email
+
+Tier C (Bronze Sponsor) — ¥5,000 / month
+- Commercial licensing exemption
+- Small logo displayed in the README
+
+[Individual Commercial License Agreements]
+Separate contracts will be established depending on corporate scale and usage type.
+
+----------------------------------------------------------------------
+4. Specifications and Abstract Models
+----------------------------------------------------------------------
+The specifications, documentation, sample code, architectural descriptions, and
+descriptions of the Divergence Oscillation Model of Nx Architecture are covered under
+this license.
+
+This license does not claim rights over abstract ideas, structural concepts, or
+algorithms themselves, but governs the use of documents, descriptions, implementations,
+and derivative works that express them.
+
+- Specification review, analysis, and academic research are permitted as non-commercial use.
+- Standardization by organizations (ISO / W3C / IETF, etc.) is permitted as non-commercial use.
+
+However, building commercial systems or products by directly using or appropriating
+the code, architectural descriptions, or specifications of this software is subject to
+the commercial-use provisions of Section 3.
+
+[Restrictions on Reproduction and Adaptation]
+Those who use the source code, architectural materials, documentation, specifications,
+or sample implementations of this software must not reproduce, modify, adapt, or
+redistribute them beyond the scope permitted by this license.
+
+----------------------------------------------------------------------
+5. Prohibited Actions
+----------------------------------------------------------------------
+The following actions are prohibited:
+
+- Misrepresenting commercial use as non-commercial or evaluation use
+- Reproducing, appropriating, or adapting the code, documentation, or architectural
+  descriptions of this software without authorization to provide or redistribute
+  commercial products or services
+- Using the name or brand of Nx Architecture as a commercial product or service name
+  without authorization
+- Creating redistributions or derivatives intended to circumvent license conditions
+
+----------------------------------------------------------------------
+6. Disclaimer
+----------------------------------------------------------------------
+Nx Architecture is provided “as is”.
+The author assumes no responsibility for any damages arising from its use.
+
+----------------------------------------------------------------------
+7. Additional Notice (Non-binding Request)
+----------------------------------------------------------------------
+Nx Architecture, its abstract model (Divergence Oscillation Model), and the structures
+that enable UI abstraction—BaseDataObj, BaseDataObjMgr, Sync wrapper classes, and the
+interface structures that homomorphically unify them—are the result of long-term
+technical exploration and research by the author.
+
+These concepts may not be fully protected under copyright law; however, respect for the
+intent and philosophy behind Nx Architecture is sincerely appreciated.
+
+The following elements are particularly important for understanding the design philosophy
+of Nx Architecture:
+
+- Divergence Oscillation Model
+- UI abstraction structure via BaseDataObj / BaseDataObjMgr / Sync wrappers
+- Continuity of abstract layers achieved through homomorphic interface structures
+
+These features possess high technical uniqueness, and if similar structures appear in
+other systems, the influence of Nx Architecture may be naturally recognized within the
+developer community.
+
+This notice is not legally binding, but it expresses the hope that the philosophy of
+Nx Architecture will be shared and that a healthy technical culture will continue.
+
+----------------------------------------------------------------------
+8. Notice of Public Disclosure (Defensive Publication)
+----------------------------------------------------------------------
+This architecture and its abstract models (including the Divergence Oscillation Model and
+the structural groups based on BaseDataObj / BaseDataObjMgr) are publicly disclosed
+technologies as evidenced by the commit history and publication timestamps of this
+repository.
+
+This repository and its commit history are published to establish prior art for the
+technologies described herein, and this public record may be referenced as prior art
+with respect to future intellectual property claims.
