@@ -1,0 +1,139 @@
+//個体リスト
+Table individuals {
+  cow_id            int       [pk, note: '個体ID']
+  ear_tag       varchar   [note: '耳標']
+  gender        boolean   [note: '性別']
+  nickname      varchar   [note: '名号']
+  father_name   varchar   [note: '父']
+  mother_name   varchar   [note: '母']
+  birth_date    datetime  [note: '生年月日']
+  remarks       varchar   [note: '備考']
+  is_deceased   boolean   [note: '死亡・転出']
+  updated_at     datetime
+  locked_by     uuid
+  locked_at     datetime
+  tenant_code   uuid
+}
+
+//作業リスト
+Table workitems {
+  work_id        int       [pk, note: 'ID']
+  work_name     varchar   [note: '作業名']
+  updated_at     datetime
+  locked_by     uuid
+  locked_at     datetime
+  tenant_code   uuid
+}
+
+//作業者リスト
+Table workerlist{
+  worker_id      int          [pk, note:'作業者ID']
+  worker_name    varchar      [note:'作業者名']
+  updated_at     datetime
+  locked_by     uuid
+  locked_at     datetime
+  tenant_code   uuid
+}
+
+//精液、受精卵リスト
+Table semen_embryo_list {
+  sem_emb_id   int              [pk, note: 'ID']
+  sem_emb_name  varchar         [note: '精液名']
+  stock_count   int                  [note: '在庫']
+  updated_at     datetime
+  locked_by     uuid
+  locked_at     datetime
+  tenant_code   uuid
+}
+
+Table semen_embryo_buy_history{
+  buy_id           int [pk, note:'購入記録ID']
+  buy_day          datetime
+  //在庫の無いアイテムの場合、このテーブルへの書き込み時に自動で登録
+  sem_emb_id       int
+  sem_emb_name     varchar
+  buy_count        int
+  written_by     uuid
+  updated_at     datetime
+  locked_by     uuid
+  locked_at     datetime
+  tenant_code   uuid
+}
+
+//AI ET履歴
+Table aiet_history {
+  aihist_id         int       [pk, note: 'No']
+  insemination_date datetime  [note: '日']
+  cow_id           int   [note: '個体ID']
+  worker_id         int       [note: '作業者ID']
+  sem_emb_id         int       [note: 'sem_emb_id']
+  work_id      int       [note: 'workItemsID']
+  written_by     uuid
+  updated_at     datetime
+  locked_by     uuid
+  locked_at     datetime
+  tenant_code   uuid
+}
+
+//妊娠鑑定記録
+Table pregnancy_history {
+  pregnancy_id     int       [pk, note: 'ID']
+  record_date       datetime  [note: '日']
+  cow_id           int   [note: '個体ID']
+  ai_record_id      int       [note: 'AI/ET記録ID']
+  is_pregnant       boolean   [note: '妊娠']
+  remarks           varchar   [note: '備考']
+  written_by     uuid
+  updated_at     datetime
+  locked_by     uuid
+  locked_at     datetime
+  tenant_code   uuid
+}
+
+//発情診療予定
+Table estrus_schedule {
+  est_sche_id                int       [pk, note: 'データID']
+  est_sche_date     datetime  [note: '日']
+  cow_id           int   [note: '個体ID']
+  record_id         int       [note: '記録ID']
+  work_id      int       [note: '作業ID']
+  planned_date      datetime  [note: '予定']
+  remarks           varchar   [note: '備考']
+  written_by     uuid
+  updated_at     datetime
+  locked_by     uuid
+  locked_at     datetime
+  tenant_code   uuid
+}
+
+//発情診療履歴
+Table estrus_history {
+  est_his_id                int       [pk, note: 'ID']
+  est_his_date       datetime   [note: '日']
+  cow_id           int   [note: '個体ID']
+  work_id      int       [note: '作業ID']
+  next_estrus_date  datetime  [note: '次回発情']
+  remarks           varchar   [note: '備考']
+  written_by     uuid
+  updated_at     datetime
+  locked_by     uuid
+  locked_at     datetime
+  tenant_code   uuid
+}
+
+//分娩履歴
+Table delivery_history {
+  delivery_id       int       [pk, note: 'ID']
+  delivery_date     datetime  [note: '日']
+  cow_id           int   [note: '個体ID']
+  work_id      int       [note: '作業ID']
+  //このテーブルにおいてのみ個体記録へはこれでリンク（雄、F1、黒毛は登録されない
+  calf_ear_tag      varchar   [note: '子牛耳票']
+  sex               boolean   [note: '雌雄']
+  remarks           varchar   [note: '備考']
+  written_by     uuid
+  updated_at     datetime
+  locked_by     uuid
+  locked_at     datetime
+  tenant_code   uuid
+}
